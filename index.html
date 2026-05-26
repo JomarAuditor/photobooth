@@ -1,41 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Booth</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="container">
-        <!-- Landscape Mode Prompt -->
-        <div id="landscapePrompt" class="landscape-prompt">
-            <p>Please rotate your phone to horizontal (landscape) mode for better photo quality!</p>
-        </div>
-
-        <!-- Brand Name -->
-        <div class="brand-name">
-            <h2>Jomar's Photobooth</h2>
-        </div>
-
-        <!-- Video Feed -->
-        <video id="video" autoplay playsinline></video>
-        <div class="controls">
-            <button id="capture">Take Photo</button>
-        </div>
-        <canvas id="canvas" style="display:none;"></canvas>
-
-        <!-- Photo Strip Container -->
-        <div class="photo-strip" id="photoStrip">
-            <div class="frames-container" id="framesContainer"></div>
-            <button id="downloadAll" class="download-btn" style="display: none;">
-                Download The Image Mga Maaasim
-            </button>
-        </div>
-    </div>
-    <script src="style.js"></script>
-</body>
-
-</html> 
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lumi. — capture your aura</title>
+    <meta name="description" content="Capture the raw, unedited energy of the moment with LUMI Studio. High-fidelity prints, instant digital drops, zero friction." />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@500;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
